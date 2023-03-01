@@ -10,9 +10,10 @@
 
     <title>Portfólio</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="headerLogo">
             <a href="#" class="logo">Portfólio</a>
         </div>
@@ -23,9 +24,35 @@
                 <li><a href="#">Serviços</a></li>
                 <li><a href="#">Minhas skills</a></li>
             </ul>
+            <ul class="burguer">
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Minhas skills</a></li>
+            </ul>
         </div>
     </header>
     <main>
+        <div class="about">
+            <div class="aboutLeft">
+                <h1>Olá, eu sou o João Paulo :)</h1>
+                <span>Desenvolvedor Front-End</span>
+                <button class="resume">Download CV</button>
+                <button class="contact">Entrar em Contato</button>
+            </div>
+            <div class="aboutRight">
+                <img src="./src/img/aboutImg.svg" alt="">
+            </div>
+        </div>
     </main>
 </body>
+<script>
+    (function () {
+    var header = document.getElementById('header');
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) header.style.backgroundColor = "#000";
+        else header.style.backgroundColor = "#171717";
+    });
+})();
+</script>
 </html>

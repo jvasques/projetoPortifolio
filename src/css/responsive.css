@@ -1,0 +1,14 @@
+@media (max-width: 629px){
+    .headerNav .menu {
+        display: none;
+    }
+    .about {
+        margin: 159px 45px 0 45px;
+    }
+    .aboutLeft {
+        width: 100%;
+    }
+    .aboutRight {
+        display: none;
+    }
+}

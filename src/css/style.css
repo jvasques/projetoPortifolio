@@ -15,11 +15,17 @@ body {
 }
 
 header {
+    position: fixed;
+    z-index: 999;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
     padding-top: 35px;
+    padding-bottom: 35px;
+    width: 100%;
+    height: auto;
+    background-color: #171717
 }
 
 .headerLogo a{
@@ -31,9 +37,6 @@ header {
 
 .headerlogo:hover {
     transform: scale(1.1);
-}
-
-.headerNav {
 }
 
 .headerNav .menu {
@@ -51,4 +54,27 @@ header {
 
 .headerNav li:hover{
     transform: scale(1.1);
+}
+
+.headerNav .burguer {
+    display: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center}
+
+.about {
+    width: 100%;
+    margin: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 179px;
+}
+
+.aboutLeft {
+    display: flex;
+    flex-direction: column;
+    width: 234px;
 }
