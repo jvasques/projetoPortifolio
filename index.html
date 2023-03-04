@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
     <title>Portfólio</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
+
 <body>
+    <div class="upper" id="upperArrow"><a href="#"><img src="./src/img/upperArrow.svg"></a></div>
     <header id="header">
         <div class="headerLogo">
             <a href="#" class="logo">Portfólio</a>
         </div>
         <div class="headerNav">
             <ul class="menu">
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Minhas skills</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#skills">Minhas skills</a></li>
             </ul>
             <ul class="burguer">
                 <li><a href="#">Sobre mim</a></li>
@@ -33,26 +36,144 @@
         </div>
     </header>
     <main>
-        <div class="about">
-            <div class="aboutLeft">
+        <section class="home">
+            <div class="homeLeft">
                 <h1>Olá, eu sou o João Paulo :)</h1>
                 <span>Desenvolvedor Front-End</span>
-                <button class="resume">Download CV</button>
-                <button class="contact">Entrar em Contato</button>
+                <div class="buttons">
+                    <button class="resume" onclick="window.open('./src/CurriculumJPV.pdf')">Download CV</button>
+                    <button class="contact" onclick="window.open('https://github.com/jvasques/', '_blank')">GitHub</button>
+                </div>
             </div>
-            <div class="aboutRight">
-                <img src="./src/img/aboutImg.svg" alt="">
+            <div class="homeRight">
+                <img src="./src/img/homeImg.svg" alt="">
             </div>
-        </div>
+        </section>
+        <section class="aboutMe" id="about">
+            <h3>Sobre Mim</h3>
+            <p>Olá, meu nome é João Paulo Vasques, tenho 26 anos e atualmente estou estudando programação front-end.
+                Sempre fui fascinado por como as coisas funcionam, e essa curiosidade me levou a seguir a carreira de
+                tecnologia.
+            <p>Minha paixão pela tecnologia começou na infância, em quando gerenciei meu próprio servidor MMORPG usando
+                PHP e MySQL. Passei minha adolescência programando jogos na engine Game Maker.</p>
+            <p>Aos 19 anos fui pai e precisei tomar outros caminhos, pois a programação para mim era somente um hobby.
+                Passei pelas áreas da construção civil (2 períodos de Técnico em Edficações), eletricidade (Técnico em
+                Eletrotécnica, onde minhas matérias preferidas envolviam programação Ladder e Arduíno) e trabalhei na
+                área de telefonia (programação de PABX).</p>
+            <p>Em 2022 decidi que estar na área de tecnologia é o que eu quero para o meu futuro e me apaixonei pelo
+                desenvolvimento Front-end, já tinha alguma noção de HTML e CSS devido ter mantido varios sites e blogues
+                para divulgar meus jogos e esto6u me aprofundando cada dia mais no mar que é o Javascript. Estou animado
+                para continuar minha jornada no campo da tecnologia e ver onde isso me leva.</p>
+        </section>
+        <section class="infos">
+            <ul class="images">
+                <li class="item item1">
+                    <span class="itemImg" onclick="window.open('https://vasques.dev', '_blank')"><img
+                            src="./src/img/smile.svg" alt="Smile"></span>
+                    <h4 class="itemTitle">Meu Nome</h4>
+                    <p class="itemDescription">João Paulo</p>
+                </li>
+                <li class="item item2">
+                    <span class="itemImg" onclick="window.open('mailto:contato@vasques.dev', '_blank')"><img
+                            src="./src/img/email.svg" alt="Email"></span>
+                    <h4 class="itemTitle">Email</h4>
+                    <p class="itemDescription">contato@vasques.dev</p>
+                </li>
+                <li class="item item3" onclick="window.open('https://instagram.com/vasquesjp', '_blank')">
+                    <span class="itemImg"><img src="./src/img/instagram.svg" alt="Instagram"></span>
+                    <h4 class="itemTitle">Instagram</h4>
+                    <p class="itemDescription">@vasquesjp</p>
+                </li>
+                <li class="item item4" onclick="window.open('https://wa.me/+5535998000806', '_blank')">
+                    <span class="itemImg"><img src="./src/img/phone.svg" alt="Phone"></span>
+                    <h4 class="itemTitle">Telefone</h4>
+                    <p class="itemDescription">(35) 99800-0806</p>
+                </li>
+            </ul>
+        </section>
+        <section class="projects" id="projects">
+            <h3>Projetos</h3>
+            <div class="cards">
+                <div class="card" onclick="window.open('https://jvasques.github.io/minesweeper/', '_blank')">
+                    <span class="projectImg"><img src="./src/img/campoMinado.png" alt="Campo Minado"></span>
+                    <h4 class="projectTitle">Campo Minado</h4>
+                    <p class="projectTechnologies">HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="card" onclick="window.open('https://www.vasques.dev/', '_blank')">
+                    <span class="projectImg"><img src="./src/img/website.png" alt="Website"></span>
+                    <h4 class="projectTitle">Website</h4>
+                    <p class="projectTechnologies">HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="card" onclick="window.open('https://jvasques.github.io/formularioBTTech/', '_blank')">
+                    <span class="projectImg"><img src="./src/img/formulário.png" alt="Formulário"></span>
+                    <h4 class="projectTitle">Formulário</h4>
+                    <p class="projectTechnologies">HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="card" onclick="window.open('https://jvasques.github.io/AyrtonSenna/', '_blank')">
+                    <span class="projectImg"><img src="./src/img/ayrtonSenna.png" alt="Tributo Ayrton Senna"></span>
+                    <h4 class="projectTitle">Tributo Ayrton Senna</h4>
+                    <p class="projectTechnologies">HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="card" onclick="window.open('https://jvasques.github.io/NLW-COPA2022/', '_blank')">
+                    <span class="projectImg"><img src="./src/img/calendarioCopa.png" alt="Calendário Copa 2022"></span>
+                    <h4 class="projectTitle">Calendário Copa 2022</h4>
+                    <p class="projectTechnologies">HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="card" onclick="window.open('https://jvasques.github.io/HoraAgora/', '_blank')">
+                    <span class="projectImg"><img src="./src/img/hora.png" alt="Hora Agora"></span>
+                    <h4 class="projectTitle">Hora Agora</h4>
+                    <p class="projectTechnologies">HTML5, CSS3, JavaScript</p>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <h3>Serviços</h3>
+            <div class="cardsServices">
+                <div class="cardServices">
+                    <span class="servicesLogo"><img src="./src/img/arrows.svg" alt="Arrows"></span>
+                    <h4 class="servicesTitle">Criação de Sites</h4>
+                </div>
+                <div class="cardServices">
+                    <span class="servicesLogo"><img src="./src/img/responsive.svg" alt="Responsive"></span>
+                    <h4 class="servicesTitle">Sites Responsivos</h4>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h3>Minhas Skills</h3>
+            <div class="cardsSkills">
+                <div class="cardSkills">
+                    <span class="skillsLogo"><img src="./src/img/html.svg" alt="HTML Logo" title="HTML5"></span>
+                </div>
+                <div class="cardSkills">
+                    <span class="skillsLogo"><img src="./src/img/css.svg" alt="CSS Logo" title="CSS3"></span>
+                </div>
+                <div class="cardSkills">
+                    <span class="skillsLogo"><img src="./src/img/js.svg" alt="JavaScript Logo" title="Javascript"></span>
+                </div>
+                <div class="cardSkills">
+                    <span class="skillsLogo"><img src="./src/img/react.svg" alt="ReactJs Logo" title="ReactJS"></span>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <h4>Desenvolvido com ❤️ por <a href="http://linkedin.com/in/jpvasques/" target="_blank" rel="noopener noreferrer">João Paulo Vasques</a></h4>
+    </footer>
 </body>
 <script>
     (function () {
-    var header = document.getElementById('header');
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 50) header.style.backgroundColor = "#000";
-        else header.style.backgroundColor = "#171717";
-    });
-})();
+        let header = document.getElementById('header');
+        let upper = document.getElementById('upperArrow');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = "#212121";
+                upper.style.display = "flex";
+            } else {
+                header.style.backgroundColor = "#171717";
+                upper.style.display = "none";
+            }
+        });
+    })();
 </script>
 </html>

@@ -1,4 +1,4 @@
-@media (max-width: 629px){
+@media (max-width: 700px){
     .headerNav .menu {
         display: none;
     }
@@ -10,5 +10,17 @@
     }
     .aboutRight {
         display: none;
+    }
+    .home {
+        justify-content: center;
+    }
+    .homeRight{
+        display: none;
+    }
+    .aboutMe{
+        max-width: 80%;
+    }
+    .images {
+        flex-wrap: wrap;
     }
 }
